@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/listRowColor"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="100dp"
+        android:layout_height="78dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/iphone"
+        />
+
+    <TextView
+        android:textColor="@color/textColor"
+        android:id="@+id/phone_name"
+        android:layout_width="200dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="Name"
+        android:layout_toRightOf="@+id/phone_image"
+        />
+
+    <TextView
+        android:textColor="@color/textColor"
+        android:id="@+id/phone_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="Rating"
+        android:layout_toRightOf="@+id/phone_name"
+        android:layout_alignParentRight="true"
+        />
+
+    <View
+        android:id="@+id/row_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/phone_image"
+        />
+
+
+
+</RelativeLayout>
